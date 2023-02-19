@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
 :root {
     border: 1px solid blue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Skranji', cursive, sans-serif;
     --var-text-color: black;
     --var-image-width: 40vw;
     --var-center-spacing: 35px;
@@ -25,6 +27,11 @@ body {
 /*Left Side*/
 .image-container {
     width: var(--var-image-width);
+    border: none;
+    border-right: 6px solid #000;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
 }
 
 .splash-text {
@@ -34,9 +41,19 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     color: whitesmoke;
     text-align: center;
-    font-weight: 1000;
-    padding-top: min(5%, 50px);
-    padding-bottom: min(5%, 50px);
+    font-weight: 700;
+    padding-top: min(5%, 30px);
+    padding-bottom: min(5%, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-size: 4rem;
+}
+
+.splash-img {
+    border-radius: 100%;
+    width: calc(0.3*var(--var-image-width));
 }
 
 .img img {
@@ -111,23 +128,27 @@ form {
     padding: 10px;
 }
 
-.btn input {
- background-color: gray;
+.btn button {
+ background-color: darkgreen;
  color: whitesmoke;
- border-radius: 5px;
+ border-radius: 8px;
  font-size: 1.5rem;
  transition: 0.15s;
+ padding: 6px;
+ font-weight: 600;
 }
 
-.btn input:hover {
+.btn button:hover {
     opacity: 0.9;
-    box-shadow: 0px 0px 10px 1px black; 
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3); 
 }
 
-.input input:invalid {
-    border-color: red;
+/*Footer*/
+.footer {
+    font-size: calc((0.5)*2.4rem);
 }
 
-.input input:valid {
-    border-color: green;
+.footer a {
+    text-decoration: none;
+    color: darkgreen;
 }
