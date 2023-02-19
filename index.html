@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="main-body">
+    <!--LEFT SIDE OF THE PAGE-->
+    <div class="image-container">
+        <div class="splash-text">
+            SPLASH TEXT
+        </div>
+        <div class="credits">
+            Image by <a href="https://unsplash.com/@hellothisisbenjamin">Benjamin Behre</a> on <a href="https://unsplash.com/photos/MBHSp3s_5vM">Unsplash</a>
+        </div>
+        <div class="img">
+            <img src="./landscape-benjamin-behre-unsplash.jpg" alt="A Nice Beach Landscape">
+        </div>
+    </div>
+    
+    <!--RIGHT SIDE OF THE PAGE-->
+    <div class="sign-up-container">
+        <div id="header">THIS IS NOT A REAL ONLINE SERVICE! PLEASE DO NOT ENTER REAL OR PERSONAL INFORMATION!</div>
+    
+        <div class="form-container">
+            <form action="#" method="post"><!--http://httpbin.org/post-->
+    
+                <div id="header">
+                    Let's do this!
+                </div>
+    
+                <div class="input-field">
+    
+                    <div class="input">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+    
+                    <div class="input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+    
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="input">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="te" id="phone_number" name="phone_number" pattern="\d{3}-\d{3}-\d{4}" required>
+                    </div>
+    
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="5" required>
+                    </div>
+    
+                    <div class="input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="5" required>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    
+        <div class="btn">
+            <input type="submit" value="Create Account Button"></input>
+        </div>
+        <div>Already have an account? Log in</div>
+    </div>
+</div>
+
+</body>
+    <script src="./javascript.js"></script>  
+</html>

@@ -1,0 +1,133 @@
+:root {
+    border: 1px solid blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --var-text-color: black;
+    --var-image-width: 40vw;
+    --var-center-spacing: 35px;
+    font-size: 12px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*DEBUGGING*/
+/** {
+    border: 1px solid red;;
+}*/
+
+
+.main-body {
+    display: flex;
+}
+
+/*Left Side*/
+.image-container {
+    width: var(--var-image-width);
+}
+
+.splash-text {
+    position: absolute;
+    width: var(--var-image-width);
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 1000;
+    padding-top: min(5%, 50px);
+    padding-bottom: min(5%, 50px);
+}
+
+.img img {
+    width: var(--var-image-width);
+    height: 100vh;
+    object-fit: cover;
+    object-position: 5%;
+}
+
+.credits {
+    position: absolute;
+    width: var(--var-image-width);
+    bottom: 1%;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.credits a {
+    color: whitesmoke;
+}
+
+/*Right Side*/
+form {
+    margin: 1rem;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-left: var(--var-center-spacing);
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 1rem;
+    width: clamp(150px, 30%, 500px);
+    margin-right: 2vw;
+    padding: 1vw;
+    color: var(--var-text-color);
+}
+
+.input input {
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1vw;
+    padding: 1vw;
+}
+
+.form-container {
+    /* x, y, blur, shadow spread, color */
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2); 
+    margin-left: calc(-1*var(--var-center-spacing));
+    padding: 10px;
+}
+
+.btn input {
+ background-color: gray;
+ color: whitesmoke;
+ border-radius: 5px;
+ font-size: 1.5rem;
+ transition: 0.15s;
+}
+
+.btn input:hover {
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px 1px black; 
+}
+
+.input input:invalid {
+    border-color: red;
+}
+
+.input input:valid {
+    border-color: green;
+}
